@@ -3,6 +3,11 @@
   box-sizing: border-box;
 }
 
+body{
+  font-family: YuMincho;
+}
+
+
 
 header{
   background-color: rgba(111, 247, 190, 1);
