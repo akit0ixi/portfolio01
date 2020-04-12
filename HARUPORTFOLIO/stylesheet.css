@@ -1,0 +1,487 @@
+/* 全体 */
+*{
+  box-sizing: border-box;
+  /* font-family: 'arial unicode ms'; */
+}
+
+body {
+  font-family: "Helvetica Neue",
+    Arial,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    Meiryo,
+    sans-serif;
+}
+
+ul{
+  list-style: none;
+}
+
+body{
+  margin: 0;
+  
+}
+
+h1{
+  font-weight: normal;
+}
+
+li a{
+  text-decoration: none;
+}
+
+/* ヘッダー */
+header{
+  background-color: #B8FDCA;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  z-index: 5;
+}
+
+
+.head > h1{
+  /* background-color: palegreen; */
+  color: black;
+  float: left;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  /* margin: 5px 0 0 5px; */
+  margin: 0;
+  /* height: auto; */
+  margin: 5px;
+}
+
+
+.head > ul{
+  /* background-color: red; */
+  float: right;
+  display: flex;
+  margin: 0;
+  margin: 5px;
+  height: 50px;
+  width: 500px;
+  margin-right: 30px;
+}
+
+.head > ul > li{
+  display: flex;
+  /* float: left; */
+  height: 50px;
+  width: 120px;
+  margin: 0 10px;
+  background-color: rgba(139, 200, 224, 0.863);
+  border-radius: 25%;
+  /* flex-wrap: wrap; */
+  
+}
+
+.head > ul >li >a{
+  height: 50px;
+  width: 100px;
+  line-height: 50px;
+  text-align: center;
+  color: white;
+  /* background-color: rgba(155, 202, 101, 0.9); */
+  /* font-size: 20px; */
+}
+
+.head li :hover{
+  opacity: 0.5;
+  /* background-color: white; */
+  cursor: pointer;
+  
+}
+
+/* プロフィール部分 */
+.prf-wrapper{
+  clear: right;
+  height: 400px;
+  /* margin-top: 50px; */
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../image/imgback1.png);
+  background-size: cover;
+}
+
+#prficon{
+  height: 250px;
+  width: auto;
+  margin-right: 20px;
+  border-radius: 15px;
+  border: 5px solid white;
+}
+
+.prf-right{
+  text-align: center;
+  margin-left: 50px;
+  color: white;
+}
+
+/* 活動内容部分 */
+
+.project-wrapper{
+  /* height: 900px; */
+  width: 100%;
+  background-color: turquoise;
+  padding-bottom: 20px;
+}
+
+.project-wrapper > h1{
+  margin: 0;
+  color: white;
+  font-size: 60px;
+  text-align: center;
+}
+
+.projects{
+  width: 100%;
+  /* height: 400px; */
+  display: flex;
+  justify-content: center;
+}
+
+.projects > ul{
+  width: 100%;
+  max-width: 1000px;
+  padding: 0;
+  padding-right: 20px;
+  padding-left: 20px;
+  /* max-width: 900px; */
+  display: flex;
+  float: left;
+  /* background-color: violet; */
+  /* flex-wrap: nowrap; */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projects > ul >li {
+  color: white;
+  background-color: gray;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  /* margin: 0 10px; */
+  border: white solid 5px;
+}
+
+
+.projects p{
+  /* display: block; */
+  align-self: center;
+  font-size: 80px;
+  /* height: 200px; */
+}
+
+#icon :hover{
+  opacity: 0.8;
+  /* background-color: white; */
+  color:#B8FDCA;
+}
+
+.clear{
+  clear: left;
+}
+
+.huki{
+  height: 100px;
+  max-width: 1000px;
+  margin: 0 auto;
+  /* background-color: greenyellow; */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.huki p{
+  margin:0 auto;
+  line-height: 100px;
+  font-size: 50px;
+}
+
+.yaji{
+  color: turquoise;
+}
+
+.disp{
+  color: white;
+}
+
+.detail{
+  margin: 0 15px 15px 10px; 
+}
+
+.detail h2{
+  font-weight: normal;
+  font-size: 30px;
+}
+
+.detail  p{
+  /* text-align: center; */
+  font-size: 25px;
+  
+}
+
+.de-contents{
+  display: none;
+  padding: 15px;
+  border: solid 3px white;
+  border-radius: 5px;
+}
+
+.action{
+  display: block;
+}
+
+.slide{
+  display: none;
+  text-align: center;
+  line-height: 900px;
+}
+
+.slide img{
+  max-height: 900px;
+  max-width: 670px;
+}
+
+.act{
+  display: block;
+}
+
+.gala > h1{
+    margin: 0;
+    font-size: 60px;
+    text-align: center;
+  }
+  
+  .gala{
+    position: relative;
+    height: 1200px;
+  }
+
+  .Index-btns{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 1000px;
+  }
+  
+  .clearf{
+    clear: both;
+  }
+
+  .Index-btn{
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    background-color: powderblue;
+    text-align: center;
+    line-height: 60px;
+ }
+
+ .Index-btns :hover{
+   opacity: 0.8;
+   cursor: pointer;
+ }
+
+ .link h1{
+    margin: 0;
+    font-size: 60px;
+    text-align: center;
+ }
+
+ .link-wrapper{
+   display: flex;
+   justify-content: center;
+ }
+
+ .link-wrapper p{
+   margin: 50px;
+   background-color: wheat;
+ }
+
+
+
+ .foot{
+   width: 100%;
+   height: 30px;
+   background-color: black;
+ }
+
+ footer p{
+   margin: 0;
+   color: white;
+   float: right;
+   padding-right: 10px;
+ }
+
+ /* タブレット向け */
+ @media screen and (max-width: 800px){
+  .font1{
+    font-size: 20px;
+    /* color: red;     test */
+  }
+  
+  .projects > ul >li{
+    border-radius: 10px;
+    height: 150px;
+    width: 150px;
+  }
+  
+}
+
+@media screen and (max-width:430px){
+  .font1{
+    /* color: blue;     test */
+    font-size: 16px; 
+  }
+
+  /* ヘッダー */
+.head>ul{
+  display: none;
+}
+
+
+  /* .head{
+    display: flex;
+    justify-content: stretch;
+  }
+
+  .head >ul>li{
+    width: 30px;
+    height: 30px;
+  } */
+
+  
+
+  /* プロフィール部分 */
+  .prf-wrapper{
+    /* clear: right; */
+    height: 550px;
+    /* margin-top: 50px; */
+    padding-top: 50px;
+    /* display: flex; */
+    flex-wrap: wrap;
+    background-image: url(../image/imgback1.png);
+    background-size: cover;
+  }
+  
+  #prficon{
+    height: 200px;
+    width: auto;
+    margin: 0;
+    margin-top: 100px;
+    /* margin-right: 20px; */
+    border-radius: 15px;
+    border: 5px solid white;
+  }
+  
+  .prf-right{
+    text-align: center;
+    /* margin-left: 50px; */
+    margin: 0;
+    padding: 10px;
+    color: white;
+    padding-bottom: 50px;
+  }
+  
+  /* 活動内容 */
+  .project-wrapper > h1{
+    font-size: 20px;
+  }
+
+  .projects > ul >li{
+    height: 30px;
+    width: 70px;
+    /* border-radius: 0; */
+    border: solid 1px;
+  }
+
+  .projects p{
+    font-size: 20px;
+  }
+
+  .huki{
+    height: 60px;
+  }
+
+  .huki p{
+    line-height: 60px;
+    font-size: 30px;
+  }
+
+  .detail h2{
+    font-size: 20px;
+  }
+
+  .detail p{
+    font-size: 14px;
+  }
+
+  /* gallery */
+  .gala{
+    height: 700px;
+  }
+
+
+  .gala h1{
+    font-size: 20px;
+  }
+
+  .slide img{
+    max-width: 250px;
+  }
+
+  .slide{
+    line-height: 500px;
+    text-align: center;
+  }
+  
+  .slides{
+    height: 500px;
+  }
+  
+  .slides > ul{
+    padding: 0;
+  }
+
+  .Index-btns{
+    position: relative;
+    top: -120px;
+    justify-content: center;
+  }
+
+  .Index-btn{
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+  }
+
+  /* form */
+
+  .link h1{
+    font-size: 20px;
+  }
+
+  .link-wrapper{
+    display: block;
+    text-align: center;
+  }
+
+  .link-wrapper p{
+    margin: 30px;
+  }
+
+  footer p{
+    font-size: 8px;
+    line-height: 30px;
+  }
+
+ }
